@@ -90,7 +90,9 @@ class Samples4Duke(PersonReIDSamples):
         identi_id, camera_id = int(split_list[0]), int(split_list[1])
         return identi_id, camera_id
 
-
+# PersonReIDDataSet 是在 Github1 上的 HOReID 存储库的 dataset.py 文件中定义的一个类。
+# 它用于从文件夹目录加载图像，并将它们作为样本列表及其相应的标识和相机 ID1 返回。该类用于
+# PersonReIDDataSet 类，该类将样本和转换函数作为输入并返回转换后的样本 1。
 class PersonReIDDataSet:
 
     def __init__(self, samples, transform):
